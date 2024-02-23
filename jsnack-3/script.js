@@ -2,13 +2,18 @@ const list = ["pippo", "pluto", "topolino", "paperino"];
 
 const userName = prompt("Inserisci il tuo nome");
 
+let trovato = false;
+
 for (let i = 0; i < list.length; i++) {
   const element = list[i];
 
   if (element == userName) {
-    console.log("sei invitato");
+    trovato = true;
     break;
-  } else {
-    console.log("nah non entri");
   }
+}
+if (trovato == true) {
+  console.log("puoi entrare");
+} else {
+  console.log("nah non entri");
 }
