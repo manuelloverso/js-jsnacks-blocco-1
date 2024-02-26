@@ -7,7 +7,7 @@ for (let i = 0; i < 10; i++) {
 
 console.log(sum); */
 
-let i = 0;
+/* let i = 0;
 while (i < 10) {
   let number = Number(prompt("inserisci un numero"));
   sum += number;
@@ -15,4 +15,15 @@ while (i < 10) {
   i++;
 }
 
+console.log(sum);
+ */
+
+let i = 0;
+
+do {
+  let number = Number(prompt("inserisci un numero"));
+  sum += number;
+
+  i++;
+} while (i < 10);
 console.log(sum);
