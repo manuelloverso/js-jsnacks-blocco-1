@@ -1,19 +1,18 @@
-const list = ["pippo", "pluto", "topolino", "paperino"];
-
-const userName = prompt("Inserisci il tuo nome");
-
-let trovato = false;
-
-for (let i = 0; i < list.length; i++) {
-  const element = list[i];
-
-  if (element == userName) {
-    trovato = true;
-    break;
-  }
+let sum = 0;
+/*
+for (let i = 0; i < 10; i++) {
+  let number = Number(prompt("inserisci un numero"));
+  sum += number;
 }
-if (trovato == true) {
-  console.log("puoi entrare");
-} else {
-  console.log("nah non entri");
+
+console.log(sum); */
+
+let i = 0;
+while (i < 10) {
+  let number = Number(prompt("inserisci un numero"));
+  sum += number;
+
+  i++;
 }
+
+console.log(sum);
